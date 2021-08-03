@@ -1,3 +1,4 @@
+// compose函数
 function fn1(x) {
     return x + 1;
 }
