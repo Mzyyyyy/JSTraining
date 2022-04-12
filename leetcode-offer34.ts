@@ -43,21 +43,13 @@ function pathSum(root: TreeNode | null, target: number): number[][] {
         if(!node) return
         path.push(node.val)
         sum+=node.val
-        console.log('!!!',node,sum)
         if(!node.left&&!node.right){
             if(sum === target){
                 res.push(path)
-            }else if(sum > target){
-                return
             }
         }else{
-            if(sum > target){
-                return
-            }
-            else{
-                dfs([...path],sum,node.left)
-                dfs([...path],sum,node.right)
-            }
+            dfs([...path],sum,node.left)
+            dfs([...path],sum,node.right)
         }
     }
     dfs([],0,root)
