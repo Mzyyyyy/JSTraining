@@ -13,7 +13,7 @@
 // };
 
 function eraseOverlapIntervals(intervals: number[][]): number {
-    intervals.sort((a,b)=>a[1]-b[1])
+    intervals.sort((a,b)=>a[0]-b[0])
     let count=0
     for(let i=0;i<intervals.length-1;i++){
         const [a,b]=intervals[i]
