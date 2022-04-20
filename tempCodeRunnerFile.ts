@@ -1,0 +1,2 @@
+
+            nums[i] = -nums[i]
