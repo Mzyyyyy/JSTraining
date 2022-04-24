@@ -21,7 +21,7 @@ Function.prototype.myBind=function(context,...args){
     const res = function(innerArgs){
         if(this instanceof that === true){
             this[fun] = that;
-            this[ffunn](...[...args, ...innerArgs]); 
+            this[fun](...[...args, ...innerArgs]); 
             delete this[fun];
         }else{
             context[fun](...[...args, ...innerArgs]);
