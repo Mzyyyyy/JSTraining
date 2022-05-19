@@ -7,7 +7,7 @@ var countSegments = function(s) {
         }
     }
 
-    return segmentCount;
+    return res;
 };res
 
 console.log(countSegments("Hello, my name is John"))
