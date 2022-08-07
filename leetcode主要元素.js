@@ -20,4 +20,4 @@ var majorityElement = function(nums) { // ?
     }
     return count * 2 > length ? candidate : -1;
 };
-console.log(majorityElement([1,2,5,9,5,9,5,5,5]))
+console.log(majorityElement([1,5,5,5,2,5,9,5,9]))
