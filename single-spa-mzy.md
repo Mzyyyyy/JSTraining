@@ -1,6 +1,11 @@
-# 手写single-spa
+# single-spa 
 
-```阅读源码后不难看出，single-spa本质上是一个加载器（控制子应用加载、卸载等功能的应用）和状态机（更改应用状态）的结合体。```
+
+![single-spa.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/90696bfd17824a8bb8c7a977af92e22a~tplv-k3u1fbpfcp-watermark.image?)
+
+```本文需结合single-spa源码食用，如上图，其大致实现方向为应用注册、应用更新、路由监听三个主要功能```
+
+[single-spa源码地址](https://github.com/single-spa/single-spa)
 
 ## 应用状态
 为了更直观体现，我把所有子应用状态先抽离出来放在前面，方便后面的使用。
@@ -223,3 +228,4 @@ function getApps(){
 
 ## 结束
 
+上文只是大致实现了一个极简版single-spa，不难看出，其本质上是一个加载器（控制子应用加载、卸载等功能的应用）和状态机（更改应用状态）的结合体。在项目中，往往还需要配合single-spa-vue来使用，下一篇文章我将简单实现一下single-spa-vue的功能。
